@@ -4,4 +4,5 @@ kcppBasic.build
 .vscode
 .cache
 kcppBasic.doxygen
-
+*.exe
+*.o
