@@ -1,31 +1,31 @@
 #include <iostream>
 using namespace std;
 
-enum class Month {
-    January = 1, February, March, April, May, June,
-    July, August, September, October, November, December
+enum class Miesiac {
+    Styczen = 1, Luty, Marzec, Kwiecien, Maj, Czerwiec,
+    Lipiec, Sierpien, Wrzesien, Pazdziernik, Listopad, Grudzien
 };
 
 int main() {
 
-    Month m = Month::June;
+    Miesiac m = Miesiac::Czerwiec;
 
     switch (m) {
-        case Month::January:   cout << "January" << endl;   break;
-        case Month::February:  cout << "February" << endl;  break;
-        case Month::March:     cout << "March" << endl;     break;
-        case Month::April:     cout << "April" << endl;     break;
-        case Month::May:       cout << "May" << endl;       break;
-        case Month::June:      cout << "June" << endl;      break;
-        case Month::July:      cout << "July" << endl;      break;
-        case Month::August:    cout << "August" << endl;    break;
-        case Month::September: cout << "September" << endl; break;
-        case Month::October:   cout << "October" << endl;   break;
-        case Month::November:  cout << "November" << endl;  break;
-        case Month::December:  cout << "December" << endl;  break;
+        case Miesiac::Styczen:     cout << "styczen" << endl;     break;
+        case Miesiac::Luty:        cout << "luty" << endl;        break;
+        case Miesiac::Marzec:      cout << "marzec" << endl;      break;
+        case Miesiac::Kwiecien:    cout << "kwiecien" << endl;    break;
+        case Miesiac::Maj:         cout << "maj" << endl;         break;
+        case Miesiac::Czerwiec:    cout << "czerwiec" << endl;    break;
+        case Miesiac::Lipiec:      cout << "lipiec" << endl;      break;
+        case Miesiac::Sierpien:    cout << "sierpien" << endl;    break;
+        case Miesiac::Wrzesien:    cout << "wrzesien" << endl;    break;
+        case Miesiac::Pazdziernik: cout << "pazdziernik" << endl; break;
+        case Miesiac::Listopad:    cout << "listopad" << endl;    break;
+        case Miesiac::Grudzien:    cout << "grudzien" << endl;    break;
     }
 
-    cout << "Month number: " << static_cast<int>(m) << endl;
+    cout << "numer miesiaca: " << static_cast<int>(m) << endl;
 
     return 0;
 }
