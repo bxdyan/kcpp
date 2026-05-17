@@ -7,7 +7,7 @@ set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 
-file(GLOB_RECURSE SOURCES "main.cpp" "src/*.cpp")
+file(GLOB_RECURSE SOURCES "main.cpp" "src/*.cpp" "src/*.cc")
 
 add_executable(ZadKlass ${SOURCES})
 
