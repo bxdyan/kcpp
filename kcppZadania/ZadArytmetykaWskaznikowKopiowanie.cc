@@ -3,7 +3,7 @@ using namespace std;
 
 void kopiujTablice(int* zrodlo, int* cel, int rozmiar) {
     for (int i = 0; i < rozmiar; i++) {
-        *(cel + i) = *(zrodlo + i);
+        cel[i] = zrodlo[i];
     }
 }
 

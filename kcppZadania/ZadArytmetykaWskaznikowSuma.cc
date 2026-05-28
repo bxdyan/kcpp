@@ -4,7 +4,7 @@ using namespace std;
 int suma(int* tab, int rozmiar) {
     int wynik = 0;
     for (int i = 0; i < rozmiar; i++) {
-        wynik += *(tab + i);
+        wynik += tab[i];
     }
     return wynik;
 }

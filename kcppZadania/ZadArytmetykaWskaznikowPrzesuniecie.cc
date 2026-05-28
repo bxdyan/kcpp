@@ -2,11 +2,11 @@
 using namespace std;
 
 void przesun(int* tab, int rozmiar) {
-    int ostatni = *(tab + rozmiar - 1);
+    int ostatni = tab[rozmiar - 1];
     for (int i = rozmiar - 1; i > 0; i--) {
-        *(tab + i) = *(tab + i - 1);
+        tab[i] = tab[i - 1];
     }
-    *tab = ostatni;
+    tab[0] = ostatni;
 }
 
 int main() {

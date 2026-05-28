@@ -4,7 +4,7 @@ using namespace std;
 int* maxElement(int* tab, int rozmiar) {
     int* maks = tab;
     for (int i = 1; i < rozmiar; i++) {
-        if (*(tab + i) > *maks) {
+        if (tab[i] > *maks) {
             maks = tab + i;
         }
     }
