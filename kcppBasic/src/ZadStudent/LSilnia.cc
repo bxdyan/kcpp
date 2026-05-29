@@ -2,17 +2,24 @@
 using namespace std;
 
 int main() {
-  int liczba;
-  long long silnia = 1; // long long, aby uniknąć przepełnienia
+    int n;
+    long long silnia = 1;
+    long long suma = 0;
 
-  cout << "Podaj liczbe do obliczenia silni: ";
-  cin >> liczba;
+    cout << "podaj liczbe: ";
+    cin >> n;
 
-  for (int i = 1; i <= liczba; i++) {
-    silnia *= i;
-  }
+    if (n < 0) {
+        cout << "silnia nie jest zdefiniowana dla liczb ujemnych" << endl;
+        return 1;
+    }
 
-  cout << "Silnia z " << liczba << " wynosi: " << silnia << endl;
+    for (int i = 1; i <= n; i++) {
+        silnia *= i;
+        suma += silnia;
+    }
 
-  return 0;
+    cout << "suma silni od 1 do " << n << " wynosi: " << suma << endl;
+
+    return 0;
 }
