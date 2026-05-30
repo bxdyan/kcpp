@@ -5,6 +5,9 @@ using namespace std;
 
 class Figura {
 public:
+
+    virtual ~Figura() = default;
+    
     virtual void Narysuj() = 0;
     virtual double Obwod() = 0;
     virtual double Pole() = 0;
